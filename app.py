@@ -143,7 +143,7 @@ def is_matricule_unique(matricule, df_existant):
     """Vérifie l'unicité du matricule"""
     if df_existant.empty:
         return True
-    return matricule not in df_existant['Matricule_Proprietaire ou numéro de la CNI'].values
+    return matricule not in df_existant['Matricule_Proprietaire'].values
 
 def format_fcfa(prix):
     """Formate un prix en FCFA avec séparateurs"""
